@@ -5,6 +5,9 @@ const expressValidator = require('express-validator');
 
 const app = express();
 
+//definindo conteúdos estáticos, contrai os arquivos deixanddo eles acessíveis a partir da raiz
+app.use(express.static('./app/public'));
+
 //definindo engine de views
 app.set('view engine', 'ejs');
 
